@@ -20,3 +20,7 @@ gem 'spring',                    group: :development
 gem 'spree', github: 'spree/spree', branch: '2-3-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-3-stable'
 gem 'spree_paypal_express', :github => "radar/better_spree_paypal_express", :branch => "2-3-stable"
+
+gem 'capistrano'
+gem 'capistrano-rails'
+gem 'capistrano-rvm'
