@@ -24,3 +24,5 @@ gem 'spree_paypal_express', :github => "radar/better_spree_paypal_express", :bra
 gem 'capistrano'
 gem 'capistrano-rails'
 gem 'capistrano-rvm'
+
+gem 'spree_digital', :git => 'git://github.com/halo/spree_digital.git', :branch => '2-3-stable'
