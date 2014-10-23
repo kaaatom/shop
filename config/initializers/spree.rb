@@ -6,6 +6,7 @@
 # In order to initialize a setting do:
 # config.setting_name = 'new value'
 Spree.config do |config|
+	config.allow_ssl_in_production = false
   # Example:
   # Uncomment to stop tracking inventory levels in the application
   # config.track_inventory_levels = false
