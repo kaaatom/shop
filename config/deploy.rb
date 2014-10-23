@@ -4,7 +4,7 @@ lock '3.2.1'
 set :application, 'shop'
 set :repo_url,    'git@github.com:kaaatom/shop.git'
 set :deploy_to,   '/home/rails'
-set :linked_dirs, fetch(:linked_dirs) + %w{public/uploads db/sqlite3 /public/spree/products}
+set :linked_dirs, fetch(:linked_dirs) + %w{public/uploads db/sqlite3 public/spree/products}
 
 namespace :deploy do
   desc 'Restart application'
