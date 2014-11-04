@@ -6,6 +6,13 @@ Rails.application.routes.draw do
   #
   # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"
   mount Spree::Core::Engine, :at => '/'
+
+Spree::Core::Engine.routes.prepend do
+  get '/about' => 'about#index'
+  get '/vip' => 'vip#index'
+  get '/diamonds' => 'diamonds#index'
+  get '/jewellery' => 'jewellery#index'
+end
           # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,0 +1,14 @@
+<nav id="top-nav-bar" class="columns twelve">
+  <ul id="nav-bar" class="inline" data-hook>
+    <li id="search-bar" data-hook>
+      <%= render :partial => 'spree/shared/search' %>
+    </li>
+	<li id="link-to-cart" data-hook>
+	  <noscript>
+	    <%= link_to Spree.t(:cart), '/cart' %>
+	  </noscript>
+	 &nbsp;
+    </li>
+    <script>Spree.fetch_cart()</script>
+  </ul>
+</nav>
